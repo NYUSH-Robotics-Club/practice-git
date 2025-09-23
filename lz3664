@@ -1,0 +1,7 @@
+PID stands for Proportional-Integral-Derivative, which are the three types of control actions used to adjust the system’s output to match the desired goal or setpoint.
+1.P-proportional
+The proportional term is responsible for correcting the error between the current state of the system and the target state.The larger the error, the stronger the correction applied.
+2.I-inregral-regulating error
+The integral term accounts for past errors. It integrates the error over time to eliminate any residual steady-state error.
+3.D-derivation
+The derivative term is responsible for predicting the future behavior of the system based on the rate of change of the error.It prevents the system from reacting too violently to sudden changes.
