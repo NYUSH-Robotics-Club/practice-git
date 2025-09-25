@@ -3,6 +3,7 @@ PID motor control is used to control motor's movement through feedback control l
 The goal is to reach a target (aka setpoint) while avoiding overshooting/oscillating.
 
 PID stands for
+
     P - Proportional 
         Corrective force is proportional to size of error. If very far from target apply very strong corrective force. Apply gradually smaller force as it approaches target.
 
