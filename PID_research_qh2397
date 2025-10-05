@@ -1,0 +1,38 @@
+# PID Motor Control
+
+## Overview
+PID motor control is a feedback control technique used to regulate a motor’s behavior — typically its **speed**, **position**, or **torque** — by continuously comparing the desired setpoint with the actual value and minimizing the difference (error).
+
+## What "PID" Stands For
+- **P (Proportional):** Responds to the current error. The larger the error, the stronger the correction.
+- **I (Integral):** Responds to the accumulation of past errors. Helps eliminate steady-state error.
+- **D (Derivative):** Responds to the rate of change of error. Helps reduce overshoot and improve stability.
+
+## Control Equation
+
+\text{Output} = K_p \times e(t) + K_i \times \int e(t)dt + K_d \times \frac{de(t)}{dt}
+
+Where:
+- \( e(t) \) = setpoint − measured value  
+- \( K_p, K_i, K_d \) = tuning constants for proportional, integral, and derivative terms.
+
+## How It Works
+1. The system measures the motor’s actual speed or position.
+2. The PID controller calculates the error and adjusts the control signal (e.g., PWM duty cycle).
+3. The process repeats continuously, forming a closed feedback loop.
+
+## Example Use
+If a motor’s target speed is 1000 RPM but it’s currently at 800 RPM:
+- The **P** term increases output to speed up.
+- The **I** term corrects long-term offset.
+- The **D** term smooths the response and prevents overshoot.
+
+## Benefits
+- High precision and stability  
+- Simple to implement  
+- Widely applicable across motor types (DC, servo, BLDC, etc.)
+
+---
+
+*Author: [Evander]*  
+*Net ID: [qh2397]*
