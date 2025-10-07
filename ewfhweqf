@@ -1,1 +1,2 @@
 fdsafdfd
+The PID controller compares the actual value to the desired value and adjusts the machine to reach the desired value. The adjustments are made 3 different ways; proportional, integral, derivative. The proportional component changes the actual values proportional to the error. The integral component analyses lingering issues and does a more long term fix. The derivative component predicts the future errors and overshoots that will happen, and then tries to prevent them from happening. The derivative component makes the system more stable 
